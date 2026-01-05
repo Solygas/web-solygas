@@ -3,108 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solygas | Soldadura y Gases Industriales</title>
+    <title>Solygas S.A. | Soldadura y Gases Industriales</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        :root {
-            --azul-solygas: #004a99;
-            --naranja-solygas: #ff4500;
-        }
-        .navbar { border-bottom: 3px solid var(--azul-solygas); }
+        :root { --azul: #004a99; --naranja: #ff4500; }
+        body { font-family: 'Segoe UI', sans-serif; color: #333; }
+        .navbar-brand img { height: 50px; width: auto; margin-right: 10px; }
         .hero { 
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 100px 0;
-            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=2070');
+            background-size: cover; padding: 100px 0; color: white;
         }
-        .btn-primary { background-color: var(--naranja-solygas); border: none; padding: 12px 30px; font-weight: bold; }
-        .btn-primary:hover { background-color: #cc3700; }
-        .service-card { border: none; transition: 0.3s; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-radius: 15px; }
-        .service-card:hover { transform: translateY(-10px); border-bottom: 4px solid var(--azul-solygas); }
-        .icon-box { font-size: 3rem; margin-bottom: 15px; }
-        footer { background: #1a1a1a; color: white; padding: 50px 0; margin-top: 50px; }
-        .btn-catalogo { border: 2px solid var(--azul-solygas); color: var(--azul-solygas); font-weight: bold; }
-        .btn-catalogo:hover { background: var(--azul-solygas); color: white; }
+        .card-producto { border: none; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: 0.3s; height: 100%; background: #fff; }
+        .card-producto:hover { transform: translateY(-5px); }
+        .btn-solygas { background-color: var(--naranja); color: white; border-radius: 25px; padding: 12px 30px; font-weight: bold; border: none; text-decoration: none; display: inline-block; }
+        .btn-solygas:hover { background-color: #cc3700; color: white; }
+        .icon-feature { color: var(--azul); font-size: 2.5rem; margin-bottom: 15px; }
     </style>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="#"><strong style="color: var(--azul-solygas);">SOLYGAS</strong></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-center">
-                    <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#catalogo">Catálogo</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#ubicacion">Ubicación</a></li>
-                    <li class="nav-item"><a class="btn btn-primary ms-lg-3" href="tel:89555522">📞 8955-5522</a></li>
-                </ul>
+            <a class="navbar-brand d-flex align-items-center fw-bold" href="#" style="color: var(--azul);">
+                <img src="logo.jpeg" alt="Logo" onerror="this.style.display='none'"> 
+                SOLYGAS S.A.
+            </a>
+            <div class="d-flex align-items-center">
+                <a href="https://www.facebook.com/share/1FiiBNsYo8/" target="_blank" class="text-primary me-3 fs-4">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://wa.me/50689555522" class="btn btn-outline-primary fw-bold">
+                    <i class="fab fa-whatsapp"></i> 8955-5522
+                </a>
             </div>
         </div>
     </nav>
 
-    <header class="hero">
+    <header class="hero text-center">
         <div class="container">
-            <h1 class="display-4 fw-bold">Soldadura y Gases Industriales</h1>
-            <p class="lead mb-4">Suministro profesional en San Isidro, Higuito y Cartago.</p>
-            <a href="https://wa.me/50689555522" target="_blank" class="btn btn-primary btn-lg shadow">Consultar por WhatsApp</a>
+            <h1 class="display-4 fw-bold">Solygas S.A.</h1>
+            <p class="lead mb-4">Expertos en Soldadura y Gases Industriales en Cartago.</p>
+            <a href="solygas-ventas.pdf" target="_blank" class="btn btn-solygas btn-lg shadow mb-3">
+                <i class="fas fa-file-pdf me-2"></i> VER CATÁLOGO COMPLETO
+            </a>
         </div>
     </header>
 
-    <section id="productos" class="container my-5 py-5">
-        <div class="text-center mb-5">
-            <h2 class="fw-bold">Nuestra Especialidad</h2>
-            <div class="mx-auto" style="width: 80px; height: 4px; background: var(--azul-solygas);"></div>
-        </div>
-        <div class="row g-4 text-center">
-            <div class="col-md-6">
-                <div class="card h-100 service-card p-4">
-                    <div class="icon-box">👨‍🏭</div>
-                    <h3>Equipos de Soldadura</h3>
-                    <p>MIG, TIG y arco manual. Insumos y accesorios de alta calidad.</p>
+    <section id="productos" class="py-5">
+        <div class="container py-5">
+            <h2 class="text-center fw-bold mb-5">Nuestros Artículos Principales</h2>
+            <div class="row g-4">
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="card card-producto p-4 text-center">
+                        <i class="fas fa-gas-pump icon-feature"></i>
+                        <h3>Oxígeno</h3>
+                        <p class="text-muted small">Corte y soldadura fuerte.</p>
+                        <button class="btn btn-sm btn-outline-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalOxigeno">Ver Detalles</button>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card h-100 service-card p-4">
-                    <div class="icon-box">🧪</div>
-                    <h3>Gases Industriales</h3>
-                    <p>Oxígeno, Acetileno, Argón y mezclas especiales con altos estándares de seguridad.</p>
-                </div>
-            </div>
-        </div>
 
-        <div id="catalogo" class="row mt-5">
-            <div class="col-12 text-center p-5 bg-light rounded shadow-sm">
-                <h3 class="fw-bold">Catálogo de Productos</h3>
-                <p>Descargue nuestra lista completa de gases y equipos de soldadura en formato PDF.</p>
-                <a href="catalogo-solygas.pdf" target="_blank" class="btn btn-catalogo btn-lg mt-3">
-                    📄 Descargar Catálogo PDF
-                </a>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card card-producto p-4 text-center">
+                        <i class="fas fa-wind icon-feature"></i>
+                        <h3>Argón</h3>
+                        <p class="text-muted small">Protección inerte TIG/MIG.</p>
+                        <button class="btn btn-sm btn-outline-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalArgon">Ver Detalles</button>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="card card-producto p-4 text-center">
+                        <i class="fas fa-grip-lines icon-feature"></i>
+                        <h3>Electrodos</h3>
+                        <p class="text-muted small">Alta penetración y arco estable.</p>
+                        <button class="btn btn-sm btn-outline-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalElectrodos">Ver Detalles</button>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="card card-producto p-4 text-center">
+                        <i class="fas fa-bolt icon-feature"></i>
+                        <h3>Soldadura MIG</h3>
+                        <p class="text-muted small">Alambres sólidos y tubulares.</p>
+                        <button class="btn btn-sm btn-outline-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalMIG">Ver Detalles</button>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <section id="ubicacion" class="bg-white py-5 border-top">
-        <div class="container text-center">
-            <h2 class="fw-bold mb-4">Contacto y Ubicación</h2>
-            <div class="p-4 shadow-sm bg-light rounded">
-                <p class="fs-5">📍 San Isidro, Higuito, Cartago, Costa Rica.</p>
-                <p class="fs-5">📱 WhatsApp: <strong>8955-5522</strong></p>
-                <p class="fs-5">📧 Correo: <strong>info@solygas.com</strong></p>
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 bg-white p-5 rounded shadow">
+                    <h3 class="text-center mb-4">Contáctenos - Solygas S.A.</h3>
+                    <div class="row">
+                        <div class="col-md-6 mb-4 text-center border-end">
+                            <p class="fw-bold mb-3">Redes y Ubicación</p>
+                            <a href="https://www.facebook.com/TU-PAGINA-AQUI" target="_blank" class="btn btn-primary w-100 mb-3" style="background-color: #1877F2;">
+                                <i class="fab fa-facebook-f me-2"></i> Síguenos en Facebook
+                            </a>
+                            <p class="text-muted small">San Isidro, Higuito, Cartago.<br>Tel: 8955-5522</p>
+                        </div>
+                        <div class="col-md-6">
+                            <form action="https://formspree.io/f/mlgdklrw" method="POST">
+                                <div class="mb-2"><input type="text" name="nombre" class="form-control" placeholder="Su Nombre" required></div>
+                                <div class="mb-2"><input type="email" name="email" class="form-control" placeholder="Su Correo" required></div>
+                                <div class="mb-2"><textarea name="mensaje" class="form-control" rows="2" placeholder="¿En qué podemos ayudarle?"></textarea></div>
+                                <button type="submit" class="btn btn-solygas w-100">Enviar Consulta</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="container text-center">
-            <h4>SOLYGAS S.A.</h4>
-            <p>© 2026 Solygas - Cartago, Costa Rica.</p>
-        </div>
+    <div class="modal fade" id="modalOxigeno" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog"><div class="modal-content">
+            <div class="modal-header"><h5>Oxígeno Industrial</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body">Suministramos oxígeno de alta pureza ideal para procesos de combustión y corte térmico. Es el aliado principal para trabajos de soldadura oxiacetilénica.</div>
+        </div></div>
+    </div>
+    
+    <div class="modal fade" id="modalArgon" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog"><div class="modal-content">
+            <div class="modal-header"><h5>Gas Argón</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body">Gas inerte de excelente calidad para protección en soldadura TIG y MIG. Recomendado para lograr acabados limpios en aluminio y acero inoxidable.</div>
+        </div></div>
+    </div>
+    
+    <div class="modal fade" id="modalElectrodos" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog"><div class="modal-content">
+            <div class="modal-header"><h5>Electrodos</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body">Contamos con una amplia gama de electrodos (6011, 6013, 7018) que aseguran una soldadura fuerte y duradera para cualquier proyecto de herrería o industria.</div>
+        </div></div>
+    </div>
+    
+    <div class="modal fade" id="modalMIG" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog"><div class="modal-content">
+            <div class="modal-header"><h5>Soldadura MIG</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body">Alambres sólidos y tubulares diseñados para alta eficiencia y productividad. Ideales para talleres de fabricación metálica y reparaciones automotrices.</div>
+        </div></div>
+    </div>
+
+    <footer class="text-center py-4 bg-dark text-white mt-5">
+        <p class="mb-0">© 2026 Solygas S.A. | San Isidro, Cartago, Costa Rica</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
