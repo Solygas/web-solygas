@@ -133,44 +133,51 @@
         </div>
     </section>
 
+    <!-- SECCIÓN DE CONTACTO TOTALMENTE CORREGIDA -->
     <section class="bg-light py-5">
         <div class="container">
             <h3 class="text-center mb-5 fw-bold">Contáctenos - Solygas S.A.</h3>
             
-            <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center align-items-lg-start gap-5">
+            <div class="row justify-content-center align-items-center g-4">
                 
-                <!-- CUADRO BLANCO DE CONTACTO -->
-                <div class="card p-5 shadow border-0" style="max-width: 600px; width: 100%; border-radius: 15px; background-color: #ffffff;">
-                    <div class="row">
-                        <div class="col-md-6 mb-4 text-center border-end">
-                            <p class="fw-bold mb-3 text-secondary">Redes y Ubicación</p>
+                <!-- COLUMNA DEL CUADRO DE CONTACTO (8 DE 12 ESPACIOS) -->
+                <div class="col-12 col-md-10 col-lg-7">
+                    <div class="card p-4 p-sm-5 shadow border-0" style="border-radius: 15px; background-color: #ffffff;">
+                        <div class="row g-4">
+                            <!-- Redes y Ubicación -->
+                            <div class="col-sm-6 text-center border-end">
+                                <p class="fw-bold mb-3 text-secondary">Redes y Ubicación</p>
+                                
+                                <a href="https://www.facebook.com/share/1FiiBNsYo8/" target="_blank" class="btn btn-primary w-100 mb-3" style="background-color: #1877F2;">
+                                    <i class="fab fa-facebook-f me-2"></i> Facebook
+                                </a>
+
+                                <a href="https://maps.app.goo.gl/ivEao2aWrRU79whNA" target="_blank" class="btn btn-google w-100 mb-3">
+                                    <i class="fas fa-map-marker-alt me-2"></i> Ver en Google Maps
+                                </a>
+
+                                <p class="text-muted small mb-0">San Isidro, Higuito, Cartago.<br>Tel: 8955-5522</p>
+                            </div>
                             
-                            <a href="https://www.facebook.com/share/1FiiBNsYo8/" target="_blank" class="btn btn-primary w-100 mb-3" style="background-color: #1877F2;">
-                                <i class="fab fa-facebook-f me-2"></i> Facebook
-                            </a>
-
-                            <a href="https://maps.app.goo.gl/ivEao2aWrRU79whNA" target="_blank" class="btn btn-google w-100 mb-3">
-                                <i class="fas fa-map-marker-alt me-2"></i> Ver en Google Maps
-                            </a>
-
-                            <p class="text-muted small">San Isidro, Higuito, Cartago.<br>Tel: 8955-5522</p>
-                        </div>
-                        
-                        <div class="col-md-6">
-                            <form action="https://formspree.io/f/mlgdklrw" method="POST">
-                                <div class="mb-2"><input type="text" name="nombre" class="form-control" placeholder="Nombre" required></div>
-                                <div class="mb-2"><input type="email" name="email" class="form-control" placeholder="Correo" required></div>
-                                <div class="mb-2"><textarea name="mensaje" class="form-control" rows="2" placeholder="Mensaje"></textarea></div>
-                                <button type="submit" class="btn btn-solygas w-100">Enviar</button>
-                            </form>
+                            <!-- Formulario de Correo -->
+                            <div class="col-sm-6">
+                                <form action="https://formspree.io/f/mlgdklrw" method="POST">
+                                    <div class="mb-2"><input type="text" name="nombre" class="form-control" placeholder="Nombre" required></div>
+                                    <div class="mb-2"><input type="email" name="email" class="form-control" placeholder="Correo" required></div>
+                                    <div class="mb-2"><textarea name="mensaje" class="form-control" rows="2" placeholder="Mensaje"></textarea></div>
+                                    <button type="submit" class="btn btn-solygas w-100">Enviar</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- LOGO PYME INDEPENDIENTE AL LADO (MÁS GRANDE) -->
-                <div class="text-center p-3 d-flex flex-column align-items-center" style="max-width: 240px;">
-                    <img src="pyme.png" alt="Sello PYME Certificada" class="img-fluid mb-3" style="max-width: 100%; height: auto; filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.15));">
-                    <p class="fw-bold text-secondary text-uppercase mb-0" style="font-size: 1rem; letter-spacing: 1px;">Empresa Certificada</p>
+                <!-- COLUMNA INDEPENDIENTE PARA EL LOGO PYME (AL LADO, GRANDE Y SIN COMPRESIÓN) -->
+                <div class="col-12 col-md-4 col-lg-3 text-center">
+                    <div class="p-3 d-inline-block">
+                        <img src="pyme.png" alt="Sello PYME Certificada" class="img-fluid mb-3" style="max-width: 180px; height: auto; filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.15));">
+                        <p class="fw-bold text-secondary text-uppercase mb-0" style="font-size: 0.95rem; letter-spacing: 1px;">Empresa Certificada</p>
+                    </div>
                 </div>
 
             </div>
